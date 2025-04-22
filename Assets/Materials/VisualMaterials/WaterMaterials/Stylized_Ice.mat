@@ -113,11 +113,11 @@ Material:
     - _IntersectionFoamFade: 1.48
     - _IntersectionFoamSpeed: 0.1
     - _IntersectionFoamTiling: 1.49
-    - _LightingHardness: 1.44
+    - _LightingHardness: 0.88
     - _LightingSmoothness: 12.34
     - _NormalScale: 0.77
     - _NormalSpeed: 0
-    - _NormalStrength: 1.01
+    - _NormalStrength: 2.5
     - _OrthographicCamSize: 0
     - _PERSPECTIVE: 1
     - _PosterizeSteps: 0

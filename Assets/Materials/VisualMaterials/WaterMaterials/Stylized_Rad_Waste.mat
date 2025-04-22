@@ -110,7 +110,7 @@ Material:
     - _IntersectionFoamDepth: 2.43
     - _IntersectionFoamDirection: 0
     - _IntersectionFoamFade: 1.48
-    - _IntersectionFoamSpeed: 0.38
+    - _IntersectionFoamSpeed: 0.1
     - _IntersectionFoamTiling: 1.71
     - _LightingHardness: 0.39
     - _LightingSmoothness: 12.34
@@ -126,16 +126,16 @@ Material:
     - _ReflectionBlend: 0.67
     - _ReflectionDistortion: 0.38
     - _RefractionScale: 10
-    - _RefractionSpeed: 0.05
+    - _RefractionSpeed: 0.06
     - _RefractionStrength: 0.01
     - _RippleStrength: 83.62
     - _SecondaryFoamBlend: 0.06
     - _SkyboxForce: 2.5
-    - _Steps: 50
+    - _Steps: 40
     - _SurfaceFoamDirection: 1
     - _SurfaceFoamDistorsion: 1
-    - _SurfaceFoamSpeed: 0.24
-    - _SurfaceFoamTiling: 8.79
+    - _SurfaceFoamSpeed: 0.1
+    - _SurfaceFoamTiling: 1.88
     - _TileSize: 200
     - _WORLD_SPACE_UV: 1
     - _WaterAlpha: 1

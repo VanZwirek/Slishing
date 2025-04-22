@@ -17,7 +17,6 @@ public class QuestBoardController : MonoBehaviour
         quest.UITab = newTab;
     }
 
-    //trying to remove the quest from the UI, but it's having problems. get it fixed at TA time?
     public void RemoveQuest(Quests quest)
     {
         if (quest.UITab != null)

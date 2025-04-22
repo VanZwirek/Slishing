@@ -9,6 +9,7 @@ TagManager:
   - DeepWater
   - RiverWater
   - NPC
+  - textBox
   layers:
   - Default
   - TransparentFX

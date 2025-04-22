@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEditor.PackageManager.Requests;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -11,7 +11,9 @@ public class NPCController : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private List<Fish> questItems;
     [SerializeField] private List<Quests> NPCQuest;
- 
+    [SerializeField] private List<Fish> questRewards;
+
+    public UnityEvent onQuestStarted;
     public UnityEvent onQuestCompleted;
     private bool hasQuest = false;
 
@@ -21,6 +23,7 @@ public class NPCController : MonoBehaviour
         {
             hasQuest = true;
             StartCoroutine(addQuest());
+            onQuestStarted.Invoke();
         }
 
         if (collision.gameObject.TryGetComponent<PlayerController>(out PlayerController player1))
@@ -30,6 +33,14 @@ public class NPCController : MonoBehaviour
                 FindObjectOfType<QuestBoardController>().RemoveQuest(NPCQuest[0]);
                 player.Quests.RemoveAt(0);
                 onQuestCompleted.Invoke();
+
+                InventoryController i = FindAnyObjectByType<InventoryController>();
+
+                foreach (Fish fish in questRewards)
+                {
+                    player.Inventory.Add(fish);
+                    i.NewFish(fish);
+                }
             }
         }
     }

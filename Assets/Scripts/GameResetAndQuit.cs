@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -30,8 +31,13 @@ public class GameResetAndQuit : MonoBehaviour
 
     private void Quit_performed(InputAction.CallbackContext obj)
     {
-        //put code here to close the editor when you click it too
         Application.Quit();
+        EditorApplication.isPlaying = false;
     }
-
+    
+    public void GameQuit()
+    {
+        Application.Quit();
+        EditorApplication.isPlaying = false;
+    }
 }

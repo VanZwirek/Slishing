@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c750b3c35cb6e4f9803238051d5811, type: 3}
   m_Name: SampleQuest
   m_EditorClassIdentifier: 
-  QuestTitle: Sample Shallow
+  QuestTitle: Starting shallow
   QuestDescription: '2x Carp
 
     1x Blue Talapia'
+  UITab: {fileID: 0}

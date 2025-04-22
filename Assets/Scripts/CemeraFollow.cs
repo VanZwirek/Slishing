@@ -4,21 +4,9 @@ using UnityEngine;
 
 public class CemeraFollow : MonoBehaviour
 {
-    [SerializeField] GameObject anchor;
-    [SerializeField] float speed;
-    [SerializeField] float rotationSpeed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject anchor;
+    public float speed;
+    public float rotationSpeed;
 
     private void FixedUpdate()
     {
@@ -27,5 +15,10 @@ public class CemeraFollow : MonoBehaviour
 
         transform.rotation = Quaternion.Slerp
             (transform.rotation, anchor.transform.rotation, rotationSpeed * Time.deltaTime);
+    }
+
+    public void SetAnchor(GameObject i)
+    {
+        anchor = i;
     }
 }

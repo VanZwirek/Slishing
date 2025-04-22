@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputAction FBMove;
     [SerializeField] private InputAction Turn;
     [SerializeField] private InputAction Cast;
+    [SerializeField] private InputAction Interact;
     [SerializeField] [ReadOnly] private bool isMoving;
     [SerializeField] [ReadOnly] private bool isTurning;
     [SerializeField] [ReadOnly] private bool isCasting;
@@ -44,6 +46,8 @@ public class PlayerController : MonoBehaviour
         FBMove = playerInput.currentActionMap.FindAction("F/BMovement");
         Turn = playerInput.currentActionMap.FindAction("L/RMovement");
         Cast = playerInput.currentActionMap.FindAction("Cast");
+        Interact = playerInput.currentActionMap.FindAction("Interact");
+        
 
         FBMove.started += FBMove_started;
         FBMove.canceled += FBMove_canceled;
@@ -54,11 +58,26 @@ public class PlayerController : MonoBehaviour
         Cast.started += Cast_started;
         Cast.canceled += Cast_canceled;
 
+        Interact.started += Interact_started;
+
         isMoving = false;
 
         rigidbody = GetComponent<Rigidbody>();
 
         FishName = FishOOP [0].name;
+    }
+
+    private void Interact_started(InputAction.CallbackContext obj)
+    {
+        RectTransform[] rectTransform = FindObjectsOfType<RectTransform>();
+        
+        foreach (RectTransform i in rectTransform)
+        {
+            if(i.gameObject.CompareTag("textBox"))
+            {
+                i.gameObject.SetActive(false);
+            }
+        }
     }
 
     private void FBMove_started(InputAction.CallbackContext obj)
@@ -151,6 +170,11 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = false;
         }
+
+        if (collision.gameObject.tag == ("NoGoArea"))
+        {
+            //rigidbody.AddForce();
+        }
     }
 
     private void OnDrawGizmos()
@@ -159,7 +183,6 @@ public class PlayerController : MonoBehaviour
         Matrix4x4 rotationMatrix  = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
         Gizmos.matrix = rotationMatrix;
         Gizmos.DrawWireCube(transform.forward + new Vector3(0, 0, 4), new Vector3(1, 6, 9));
-        //Gizmos.DrawLine(transform.position, blokkade1.transform.position);
     }
 
     private void FixedUpdate()

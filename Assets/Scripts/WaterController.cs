@@ -12,15 +12,12 @@ public class WaterController : MonoBehaviour
         return FishList[i];
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == ("Player"))
+        {
+            Debug.Log("i hit da watuh");
+            collision.gameObject.GetComponent<Rigidbody>().velocity = collision.contacts[0].normal * 100;
+        }
     }
 }
