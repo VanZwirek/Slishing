@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2378ed59a41a74fa0a3a910bcaf1eb, type: 3}
   m_Name: RainbowFish
   m_EditorClassIdentifier: 
-  FishName: Rainbowfish
+  FishName: Rainbow Trout
   FishSprite: {fileID: 0}

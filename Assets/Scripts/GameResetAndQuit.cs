@@ -26,7 +26,7 @@ public class GameResetAndQuit : MonoBehaviour
     
     private void Restart_performed(InputAction.CallbackContext obj)
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("OpenWorld");
     }
 
     private void Quit_performed(InputAction.CallbackContext obj)

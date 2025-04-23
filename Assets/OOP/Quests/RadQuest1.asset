@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c750b3c35cb6e4f9803238051d5811, type: 3}
   m_Name: RadQuest1
   m_EditorClassIdentifier: 
-  QuestTitle: something in the water...
-  QuestDescription: '2 x Rainbowfish
+  QuestTitle: In the water?
+  QuestDescription: '2 x Mutated Cod
 
-    2 x Mutated Cod'
+    3 x Enlarged Sardine'
   UITab: {fileID: 0}

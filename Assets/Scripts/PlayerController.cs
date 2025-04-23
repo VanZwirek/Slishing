@@ -121,6 +121,7 @@ public class PlayerController : MonoBehaviour
                 WaterController water = colliders[0].GetComponent<WaterController>();
                 if (water != null)
                 {
+                    Debug.Log("fffffff");
                     StartCoroutine (Fishing(water));
                 }
             }
@@ -138,7 +139,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Fishing(WaterController water)
     {
-        while (isCasting)
+        Debug.Log("FFFFFFFFUUUUUUUUUUUUUUUUUUCCCCCCCCCCCCKKKKKKKKKKK");
+        while (isCasting == true)
         {
             Debug.Log("you are fishing in shallow water");
 
@@ -169,11 +171,6 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == ("Ground"))
         {
             isJumping = false;
-        }
-
-        if (collision.gameObject.tag == ("NoGoArea"))
-        {
-            //rigidbody.AddForce();
         }
     }
 
