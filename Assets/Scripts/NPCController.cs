@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : NPCController.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : manages things with the NPCs, like checking if youve taken their quest
+*****************************************************************************/
 using System;
 using System.Collections;
 using System.Collections.Generic;

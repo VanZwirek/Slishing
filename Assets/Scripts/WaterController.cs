@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : WaterController.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : gives fish from the list in the water objects into the player's inventory
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

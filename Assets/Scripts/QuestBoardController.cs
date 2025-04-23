@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : QuestBoardController.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : adds the UI elements to the quest board
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

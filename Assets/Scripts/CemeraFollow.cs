@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : CameraFollow.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : makes the camera follow around the player, and uses Lerp to make it smooth
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

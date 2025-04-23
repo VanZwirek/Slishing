@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : GameResetAndQuit.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : lets the player quit and reset the game with Q and R
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;

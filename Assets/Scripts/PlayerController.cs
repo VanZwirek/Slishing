@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : PlayerController.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : it's the player controller, it manages everything with movement and actions.
+*****************************************************************************/
 using System;
 using System.Collections;
 using System.Collections.Generic;

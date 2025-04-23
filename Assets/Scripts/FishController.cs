@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : FishController.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : this is for something i was using in the alpha stuff, and i cant seem to remove it? it just comes back :/
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : Quests.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : this is just a scriptable object thing
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

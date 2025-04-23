@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : Fish.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : activates the fish scriptable objects
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

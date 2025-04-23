@@ -1,3 +1,10 @@
+/*****************************************************************************
+// File Name : InventoryController.cs
+// Author : Van A. Zwirek
+// Creation Date : Febuary 12, 2025
+//
+// Brief Description : puts anything added to the inventory list that the player has, to the UI, and vice versa
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
