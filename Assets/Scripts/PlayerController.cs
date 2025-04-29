@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     private float turnDirection;
     [SerializeField] private float turnSpeed;
-    private Rigidbody rigidbody;
+    public new Rigidbody rigidbody;
     [SerializeField] private float jumpValue = 25f;
     [SerializeField] private bool isJumping;
     [SerializeField] private float castRadius;

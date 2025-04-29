@@ -8,7 +8,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager.Requests;
+//using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -24,6 +24,7 @@ public class NPCController : MonoBehaviour
     public UnityEvent onQuestCompleted;
     private bool hasQuest = false;
 
+    [Obsolete]
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.TryGetComponent<PlayerController>(out PlayerController player) && hasQuest == false)
@@ -52,6 +53,7 @@ public class NPCController : MonoBehaviour
         }
     }
 
+    [Obsolete]
     IEnumerator addQuest()
     {
         FindObjectOfType<QuestBoardController>().newQuest(NPCQuest[0]);

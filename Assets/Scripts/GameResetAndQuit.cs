@@ -39,12 +39,12 @@ public class GameResetAndQuit : MonoBehaviour
     private void Quit_performed(InputAction.CallbackContext obj)
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
     }
     
     public void GameQuit()
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
     }
 }
