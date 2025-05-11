@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2378ed59a41a74fa0a3a910bcaf1eb, type: 3}
   m_Name: DaperNessie
   m_EditorClassIdentifier: 
-  FishName: DapperNessie
+  FishName: Dapper Nessie
   FishSprite: {fileID: 0}
+  IsTreasure: 1

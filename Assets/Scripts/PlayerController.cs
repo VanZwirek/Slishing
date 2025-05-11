@@ -25,11 +25,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InputAction Turn;
     [SerializeField] private InputAction Cast;
     [SerializeField] private InputAction Interact;
+    [SerializeField] private InputAction Run;
     [SerializeField] [ReadOnly] private bool isMoving;
     [SerializeField] [ReadOnly] private bool isTurning;
     [SerializeField] [ReadOnly] private bool isCasting;
     private float moveDirection;
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float moveSpeed = 6;
     private float turnDirection;
     [SerializeField] private float turnSpeed;
     public new Rigidbody rigidbody;
@@ -54,10 +55,14 @@ public class PlayerController : MonoBehaviour
         Turn = playerInput.currentActionMap.FindAction("L/RMovement");
         Cast = playerInput.currentActionMap.FindAction("Cast");
         Interact = playerInput.currentActionMap.FindAction("Interact");
+        Run = playerInput.currentActionMap.FindAction("Run");
         
 
         FBMove.started += FBMove_started;
         FBMove.canceled += FBMove_canceled;
+
+        Run.started += Run_started;
+        Run.canceled += Run_canceled;
 
         Turn.started += turn_started;
         Turn.canceled += Turn_canceled;
@@ -72,6 +77,21 @@ public class PlayerController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
 
         FishName = FishOOP [0].name;
+    }
+  
+    private void Run_started(InputAction.CallbackContext obj)
+    {
+        if (isMoving)
+        {
+            moveSpeed = 10;
+        }
+    }
+
+    private void Run_canceled(InputAction.CallbackContext obj)
+    {
+       
+            moveSpeed = 6;
+       
     }
 
     private void Interact_started(InputAction.CallbackContext obj)
@@ -128,7 +148,6 @@ public class PlayerController : MonoBehaviour
                 WaterController water = colliders[0].GetComponent<WaterController>();
                 if (water != null)
                 {
-                    Debug.Log("fffffff");
                     StartCoroutine (Fishing(water));
                 }
             }
@@ -146,7 +165,6 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Fishing(WaterController water)
     {
-        Debug.Log("FFFFFFFFUUUUUUUUUUUUUUUUUUCCCCCCCCCCCCKKKKKKKKKKK");
         while (isCasting == true)
         {
             Debug.Log("you are fishing in shallow water");

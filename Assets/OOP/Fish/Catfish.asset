@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Catfish
   m_EditorClassIdentifier: 
   FishName: Catfish
-  FishSprite: {fileID: 21300000, guid: aac2c2fa533d51c46a94c3f670bdcc9a, type: 3}
+  FishSprite: {fileID: 21300000, guid: 57fbf7742b85970458606593925fc091, type: 3}

@@ -14,4 +14,5 @@ public class Fish : ScriptableObject
 {
     public string FishName;
     public Sprite FishSprite;
+    public bool IsTreasure;
 }

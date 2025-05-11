@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: UthDaba
   m_EditorClassIdentifier: 
   FishName: Uth Daba
-  FishSprite: {fileID: 0}
+  FishSprite: {fileID: 21300000, guid: 71e16ae827e672049879398fc99a7075, type: 3}
+  IsTreasure: 1

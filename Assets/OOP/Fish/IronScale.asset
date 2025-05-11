@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: IronScale
   m_EditorClassIdentifier: 
   FishName: ironscale
-  FishSprite: {fileID: 0}
+  FishSprite: {fileID: 21300000, guid: ba06ac512f491de44bc72b50ef3db328, type: 3}

@@ -96,6 +96,4 @@ public class NPCController : MonoBehaviour
         }
         return false;
     }
-
-    
 }

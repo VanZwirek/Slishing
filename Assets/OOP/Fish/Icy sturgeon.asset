@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2378ed59a41a74fa0a3a910bcaf1eb, type: 3}
   m_Name: Icy sturgeon
   m_EditorClassIdentifier: 
-  FishName: Icy Sturgeon
-  FishSprite: {fileID: 0}
+  FishName: Icey Sturgeon
+  FishSprite: {fileID: 21300000, guid: bf6518a4d5d65494e811c34c523a3954, type: 3}

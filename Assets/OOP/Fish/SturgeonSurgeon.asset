@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SturgeonSurgeon
   m_EditorClassIdentifier: 
   FishName: Sturgeon
-  FishSprite: {fileID: 21300000, guid: bd47fbea1dca7d44babf4344672e9a1b, type: 3}
+  FishSprite: {fileID: 21300000, guid: eda72f05a3c8467489ebb12d2a6c35de, type: 3}

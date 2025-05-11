@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Carp
   m_EditorClassIdentifier: 
   FishName: Carp
-  FishSprite: {fileID: 21300000, guid: d2c0be0f016a4e642aa8366bf3872e15, type: 3}
+  FishSprite: {fileID: 21300000, guid: b31ad198a2ddcef4e854b942e46a4596, type: 3}

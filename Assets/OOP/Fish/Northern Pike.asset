@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Northern Pike
   m_EditorClassIdentifier: 
   FishName: Northern Pike
-  FishSprite: {fileID: 0}
+  FishSprite: {fileID: 21300000, guid: 50fa69bbc09a69944ab49dd2d542e2f9, type: 3}

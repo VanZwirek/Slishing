@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FishName: Irradiated Antenna
   FishSprite: {fileID: 0}
+  IsTreasure: 1

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pacific Barreleye
   m_EditorClassIdentifier: 
   FishName: Pacific Barreleye
-  FishSprite: {fileID: 21300000, guid: 1d9621ebeddcb68488f1497fa38333d7, type: 3}
+  FishSprite: {fileID: 21300000, guid: 4cf0d16ceeb2f5f4b976e32ba8db7f7d, type: 3}

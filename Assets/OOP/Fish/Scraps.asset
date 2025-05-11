@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FishName: Scrap
   FishSprite: {fileID: 21300000, guid: 8a2bf144fdfef4e4b85b444c94bed136, type: 3}
+  IsTreasure: 1

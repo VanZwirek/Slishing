@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2378ed59a41a74fa0a3a910bcaf1eb, type: 3}
   m_Name: Blue Talapia
   m_EditorClassIdentifier: 
-  FishName: Blue Talapia
-  FishSprite: {fileID: 21300000, guid: f5ea21d3de384484da0d54a3232d699c, type: 3}
+  FishName: Blue Tilapia
+  FishSprite: {fileID: 21300000, guid: 4d5b489ef83965c4b9f62f3a447ae30c, type: 3}
